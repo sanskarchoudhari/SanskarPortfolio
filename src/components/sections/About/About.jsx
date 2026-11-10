@@ -1,5 +1,6 @@
 import { title } from "framer-motion/client";
 import { FaCode, FaLaptopCode, FaGraduationCap, FaBriefcase } from "react-icons/fa";
+import resumePDF from "../../../assets/resume/Sanskar_Choudhari_Resume.pdf";
 
 function About() {
     const highlights = [
@@ -74,9 +75,17 @@ function About() {
                                 maintainable code.
                             </p>
 
-                            <a href="/resume.pdf"
+                            {/* <a href="/resume.pdf"
                                 target="_blank"
                                 className="inline-block mt-8 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl transition"
+                            >
+                                Download Resume
+                            </a> */}
+
+                            <a
+                                href={resumePDF}
+                                download="Sanskar_Choudhari_Resume.pdf"
+                                className="inline-flex items-center gap-2 rounded-lg border border-blue-500 px-6 py-3 font-semibold text-blue-400 transition hover:bg-blue-600 hover:text-white"
                             >
                                 Download Resume
                             </a>

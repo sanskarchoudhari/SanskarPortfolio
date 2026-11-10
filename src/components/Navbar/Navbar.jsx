@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import resumePDF from "../../assets/resume/Sanskar_Choudhari_Resume.pdf";
 
 const navLinks = [
     {
@@ -52,10 +53,18 @@ function Navbar() {
 
                     {/* Resume Button */}
 
-                    <a href="/resume.gif"
+                    {/* <a href="/resume.gif"
                         target="_blank"
                         className="hidden md:block bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg transition">
                         Resume
+                    </a> */}
+                    <a
+                        href={resumePDF}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="rounded-lg bg-blue-600 px-5 py-2.5 font-semibold text-white transition hover:bg-blue-700"
+                    >
+                        View Resume
                     </a>
 
                     {/* Mobile Menu Button */}

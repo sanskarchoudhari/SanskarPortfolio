@@ -2,6 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedin, FaDownload, FaEnvelope } from "react-icons/fa";
 
 import profileImage from "../../../assets/images/profile.png";
+import resumePDF from "../../../assets/resume/Sanskar_Choudhari_Resume.pdf";
 
 function Hero() {
     return (
@@ -53,12 +54,19 @@ function Hero() {
                             {/* Buttons */}
 
                             <div className="flex flex-wrap gap-4 mt-10">
-                                <a
+                                {/* <a
                                     href="/resume.pdf"
                                     target="_blank"
                                     className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl flex items-center gap-2 transition"
                                 >
                                     <FaDownload />
+                                    Download Resume
+                                </a> */}
+                                <a
+                                    href={resumePDF}
+                                    download="Sanskar_Choudhari_Resume.pdf"
+                                    className="inline-flex items-center gap-2 rounded-lg border border-blue-500 px-6 py-3 font-semibold text-blue-400 transition hover:bg-blue-600 hover:text-white"
+                                >
                                     Download Resume
                                 </a>
 
